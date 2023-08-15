@@ -1,0 +1,52 @@
+.setters {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0 3rem;
+
+    .break, .session {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        border-radius: 20px;
+        border: 1px solid $border;
+
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        span {
+            font-size: 1.6rem;
+            margin: 0 1.5rem;
+        }
+
+        button {
+            padding: .5rem;
+            background-color: transparent;
+            color: $white;
+            border: 1px solid $border;
+            border-radius: 50%;
+            transition: all .2s linear;
+
+            &:hover {
+                background-color: $white;
+                color: $bgColor;
+            }
+
+        }
+    }
+
+    #break-label {
+        color: $lightGreen;
+    }
+
+    #session-label {
+        color: $lightRed;
+    }
+}

@@ -1,0 +1,54 @@
+.display {
+    min-width: 25rem;
+    min-height: 25rem;
+    
+    border: 1px solid $border;
+    border-radius: 50%;
+    padding: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #timer-label {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    #time-left {
+        font-size: 4.5rem;
+        line-height: 1;
+        margin-bottom: 3rem;
+        font-weight: 600;
+
+        &.green {
+            color: $lightGreen;
+        }
+
+        &.red {
+            color: $lightRed;
+        }
+    }
+
+    .actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        button {
+            padding: 1rem;
+            background-color: transparent;
+            color: $white;
+            border: 1px solid $white;
+            border-radius: 50%;
+            transition: all .2s linear;
+
+            &:hover {
+                background-color: $white;
+                color: $bgColor;
+            }
+
+        }
+    }
+}
